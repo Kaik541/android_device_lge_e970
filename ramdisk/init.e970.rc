@@ -43,6 +43,11 @@ on init
     setprop ro.usb.idproduct.mtp 631C
     setprop ro.usb.idproduct.mtp_adb 61F9
 
+#   Added to disable secure adb
+#   By: Ryan Wilson
+    setprop ro.adb.secure 0
+    setprop ro.secure 0
+
 service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
     class late_start
     disabled

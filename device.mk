@@ -41,7 +41,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     device/lge/e970/ramdisk/init.e970.rc:root/init.e970.rc \
     device/lge/e970/ramdisk/ueventd.e970.rc:root/ueventd.e970.rc \
-    device/lge/e970/ramdisk/fstab.e970:root/fstab.e970
+    device/lge/e970/ramdisk/fstab.e970:root/fstab.e970 \
+    device/lge/e970/ramdisk/default.prop:root/default.prop
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \

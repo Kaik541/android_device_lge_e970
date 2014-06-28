@@ -20,6 +20,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_e970_defconfig
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/e970/ramdisk/fstab.e970
 RECOVERY_FSTAB_VERSION := 2
+DEVICE_RESOLUTION := 1280x768
 
 # inherit from ls970-common
 -include device/lge/ls970-common/BoardConfigCommon.mk
