@@ -29,13 +29,16 @@ $(call inherit-product, device/lge/ls970-common/ls970-common.mk)
 # Enable for debugging
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1 \
-    persist.service.adb.enable=1
+    persist.service.adb.enable=1 \
+    ro.secure=0 \
+    ro.adb.secure=0
 
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnCdmaDevice=0 \
+	telephony.lteOnCdmaDevice=1 \
 	ro.telephony.default_network=9 \
-	telephony.lteOnGsmDevice=1
+	telephony.lteOnGsmDevice=1 \
+        ro.ril.def.preferred.network=9
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
