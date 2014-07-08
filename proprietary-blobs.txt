@@ -35,6 +35,7 @@ lib/egl/libq3dtools_adreno200.so
 lib/hw/gps.msm8960.so
 lib/hw/sensors.msm8960.so
 lib/hw/camera.msm8960.so
+lib/libacdbloader.so
 lib/libaudcal.so
 lib/libaudioalsa.so
 lib/libC2D2.so

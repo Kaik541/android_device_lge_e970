@@ -9,9 +9,7 @@ TARGET_SCREEN_WIDTH := 768
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-#$(call inherit-product, vendor/omni/config/common_full_phone.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Enhanced NFC
 #$(call inherit-product, vendor/omni/config/nfc_enhanced.mk)
