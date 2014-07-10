@@ -47,6 +47,10 @@ PRODUCT_COPY_FILES += \
     device/lge/e970/ramdisk/fstab.e970:root/fstab.e970 \
     device/lge/e970/ramdisk/default.prop:root/default.prop
 
+# TWRP Recovery
+PRODUCT_COPY_FILES += \
+    device/lge/e970/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
