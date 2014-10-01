@@ -9,10 +9,10 @@ TARGET_SCREEN_WIDTH := 768
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/omni/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e970/full_e970.mk)
