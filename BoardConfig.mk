@@ -18,8 +18,16 @@ BOARD_KERNEL_CMDLINE := vmalloc=600M console=null lpj=67677 user_debug=31 msm_rt
 TARGET_KERNEL_CONFIG := cyanogenmod_e970_defconfig
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/e970/ramdisk/fstab.e970
+#TARGET_RECOVERY_FSTAB := device/lge/e970/ramdisk/fstab.e970
 RECOVERY_FSTAB_VERSION := 2
+RECOVERY_SDCARD_ON_DATA := true
+DEVICE_RESOLUTION := 720x1280
+TARGET_USERIMAGES_USE_EXT4 := true
+
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_PATH := "sdcard"
 
 # inherit from ls970-common
 include device/lge/ls970-common/BoardConfigCommon.mk
