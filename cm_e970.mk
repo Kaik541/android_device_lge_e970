@@ -6,19 +6,21 @@ TARGET_SCREEN_WIDTH := 768
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/liquid/config/common_phone.mk)
+$(call inherit-product, vendor/cm/config/common_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e970/full_e970.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e970
-PRODUCT_NAME := liquid_e970
+PRODUCT_NAME := cm_e970
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-E970
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=google/occam/mako:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2.2 JDQ39 573038 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:5.1.1/LMY47V/1836172:user/release-keys \
+   PRIVATE_BUILD_DESC="occam-user 5.1.1 LMY47V 1836172 release-keys"

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/liquid_e970.mk
+    $(LOCAL_DIR)/cm_e970.mk
